@@ -1,0 +1,5 @@
+.preview-area {
+    background-color: white;
+    height: 100vh;
+    flex-grow: 1;
+}

@@ -1,8 +1,17 @@
 body {
   height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 #root {
   height: 100%;
-  --azul: blue;
+  --accent-color: rgb(255, 197, 131);
+  --background-color: rgb(236, 221, 203);
+  --main-color: rgb(245, 201, 146);
+  --dark-font-color: rgb(80, 45, 0);
 }
