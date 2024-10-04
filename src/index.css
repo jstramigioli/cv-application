@@ -1,4 +1,4 @@
-body {
+body, #root {
   height: 100vh;
   margin: 0;
   padding: 0;
@@ -6,12 +6,14 @@ body {
 
 * {
   box-sizing: border-box;
+  font-family: var(--main-font);
 }
 
 #root {
   height: 100%;
   --accent-color: rgb(255, 197, 131);
-  --background-color: rgb(236, 221, 203);
-  --main-color: rgb(245, 201, 146);
+  --background-color: rgb(247, 243, 238);
+  --main-color: rgb(243, 220, 192);
   --dark-font-color: rgb(80, 45, 0);
+  --main-font: "Lato", sans-serif;
 }

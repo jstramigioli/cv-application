@@ -1,13 +1,62 @@
 import { useState } from 'react'
-import './App.css'
-import Header from './components/Header'
-import EditingArea from './components/Editing-area'
-import PreviewArea from './components/Preview-area'
+import '../styles/App.css'
+import Header from './Header'
+import EditingArea from './Editing-area'
+import PreviewArea from './Preview-area'
 
 function App() {
-  const [bioInfo, setBioInfo] = useState([{}])
-  const [eduInfo, setEduInfo] = useState([{}])
-  const [jobInfo, setJobInfo] = useState([{}])
+  const [bioInfo, setBioInfo] = useState([{
+    id:crypto.randomUUID(),
+    /* 'bio-fn':'',
+    'bio-ln':'',
+    'bio-mail':'',
+    'bio-tel':'',
+    'bio-date':'' */
+    'bio-fn':'Julian',
+    'bio-ln':'Stramigioli',
+    'bio-mail':'julian@gmail.com',
+    'bio-tel':'123456789',
+    'bio-date':'1994-6-1'
+  }])
+  const [eduInfo, setEduInfo] = useState([{
+    id:crypto.randomUUID(),
+    /* 'edu-school':'',
+    'edu-title':'',
+    'edu-date':'' */
+    'edu-school':'San Patricio',
+    'edu-title':'Escuela Primaria',
+    'edu-date':'1994-6-1'
+  },
+  {
+    id:crypto.randomUUID(),
+    'edu-school':'Bottger',
+    'edu-title':'Escuela secundaria',
+    'edu-date':'1994-6-1'
+  }
+])
+  const [jobInfo, setJobInfo] = useState([{
+    id:crypto.randomUUID(),
+    /* 'exp-name':'',
+    'exp-title':'',
+    'exp-resp':'',
+    'exp-from':'',
+    'exp-to':'', */
+    'exp-name':'Docente Faud',
+    'exp-title':'Ayudante auxiliar',
+    'exp-resp':'Colaborar en las tareas docentes',
+    'exp-from':'1994-6-1',
+    'exp-to':'1994-6-1',
+  },
+{
+  id:crypto.randomUUID(),
+  'exp-name':'Docente Faud',
+    'exp-title':'Ayudante auxiliar',
+    'exp-resp':'Colaborar en las tareas docentes',
+    'exp-from':'1994-6-1',
+    'exp-to':'1994-6-1',
+  
+}
+])
 
   const bioData = {
     title: 'Bio',
@@ -59,10 +108,10 @@ function App() {
  
   return (
     <>
-      <Header/>
+      
       <main>
         <EditingArea cvData={cvData}/>
-        <PreviewArea/>
+        <PreviewArea cvData={cvData}/>
       </main>
     </>
   )

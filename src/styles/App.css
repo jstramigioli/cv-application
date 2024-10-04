@@ -1,0 +1,10 @@
+main {
+    display: flex;
+    height: 100vh;
+}
+
+button {
+    border-style: none;
+    background-color: var(--accent-color);
+    
+}
