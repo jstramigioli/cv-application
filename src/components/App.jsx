@@ -1,59 +1,45 @@
 import { useState } from 'react'
 import '../styles/App.css'
-import Header from './Header'
 import EditingArea from './Editing-area'
 import PreviewArea from './Preview-area'
 
 function App() {
   const [bioInfo, setBioInfo] = useState([{
     id:crypto.randomUUID(),
-    /* 'bio-fn':'',
-    'bio-ln':'',
-    'bio-mail':'',
-    'bio-tel':'',
-    'bio-date':'' */
-    'bio-fn':'Julian',
-    'bio-ln':'Stramigioli',
-    'bio-mail':'julian@gmail.com',
+    'bio-fn':'Homer',
+    'bio-ln':'Simpson',
+    'bio-mail':'homer@gmail.com',
     'bio-tel':'123456789',
-    'bio-date':'1994-6-1'
+    'bio-date':'1994-3-3'
   }])
   const [eduInfo, setEduInfo] = useState([{
     id:crypto.randomUUID(),
-    /* 'edu-school':'',
-    'edu-title':'',
-    'edu-date':'' */
-    'edu-school':'San Patricio',
-    'edu-title':'Escuela Primaria',
-    'edu-date':'1994-6-1'
+    'edu-school':'A school',
+    'edu-title':'Elementary',
+    'edu-date':'1997-6-1'
   },
   {
     id:crypto.randomUUID(),
-    'edu-school':'Bottger',
-    'edu-title':'Escuela secundaria',
-    'edu-date':'1994-6-1'
+    'edu-school':'Another School',
+    'edu-title':'High School',
+    'edu-date':'2003-6-1'
   }
 ])
   const [jobInfo, setJobInfo] = useState([{
     id:crypto.randomUUID(),
-    /* 'exp-name':'',
-    'exp-title':'',
-    'exp-resp':'',
-    'exp-from':'',
-    'exp-to':'', */
-    'exp-name':'Docente Faud',
-    'exp-title':'Ayudante auxiliar',
-    'exp-resp':'Colaborar en las tareas docentes',
-    'exp-from':'1994-6-1',
-    'exp-to':'1994-6-1',
+    'exp-name':'My first work',
+    'exp-title':'Worker',
+    'exp-resp':'Working hard',
+    'exp-from':'2011-6-1',
+    'exp-to':'2015-6-1',
   },
 {
   id:crypto.randomUUID(),
-  'exp-name':'Docente Faud',
-    'exp-title':'Ayudante auxiliar',
-    'exp-resp':'Colaborar en las tareas docentes',
-    'exp-from':'1994-6-1',
-    'exp-to':'1994-6-1',
+  'exp-name':'My next work',
+    'exp-title':'Also a worker',
+    'exp-resp':'Working even harder',
+    'exp-from':'2015-6-1',
+    'exp-to':'2018-6-1',
   
 }
 ])
